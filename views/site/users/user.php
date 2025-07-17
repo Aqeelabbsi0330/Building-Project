@@ -9,7 +9,7 @@
           <form class="row g-3">
             <div class="col-12">
               <label for="cnic" class="form-label fw-semibold">CNIC <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="cnic" inputmode="numeric"  pattern="[0-9]{13}" maxlength="13" placeholder="cnic without dashes" required>
+              <input type="text" class="form-control" id="cnic" inputmode="numeric"  pattern="[0-9]{13}" maxlength="13" placeholder="Enter CNIC without dashes" required>
             </div>
 
             <div class="col-12">

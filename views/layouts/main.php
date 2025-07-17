@@ -22,7 +22,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<?php include(__DIR__ . '/_scripts.php'); ?>
+<?php include(__DIR__ . '/_scripts.php');?>
 <?php include(__DIR__ . '/_header.php'); ?>
   
    <div class="app-wrapper bg-light pt-5 min-vh-100">

@@ -123,7 +123,7 @@
 			            <div class="app-utility-item app-user-dropdown dropdown">
 				            <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="assets/images/user.png" alt="user profile"></a>
 				            <ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-								<li><a class="dropdown-item" href="account.html">Account</a></li>
+								<li><a class="dropdown-item" href="<?= \yii\helpers\Url::to(['site/user']) ?>">Account</a></li>
 								<li><a class="dropdown-item" href="settings.html">Settings</a></li>
 								<li><hr class="dropdown-divider"></li>
 								<li><a class="dropdown-item" href="login.html">Log Out</a></li>
@@ -186,6 +186,33 @@
 						        </ul>
 					        </div>
 					    </li><!--//nav-item-->
+
+
+
+                        <li class="nav-item has-submenu">
+					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+					        <a class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-unit" aria-expanded="false" aria-controls="submenu-unit">
+						        <span class="nav-icon">
+						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
+						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.354 1.146a.5.5 0 0 0-.708 0L1 7.793V14.5A1.5 1.5 0 0 0 2.5 16h11a1.5 1.5 0 0 0 1.5-1.5V7.793L8.354 1.146ZM2 14.5V8.707l6-6 6 6V14.5a.5.5 0 0 1-.5.5H10V10H6v5H2.5a.5.5 0 0 1-.5-.5Z"/>
+							   </svg>
+						         </span>
+		                         <span class="nav-link-text">Unit</span>
+		                         <span class="submenu-arrow">
+		                           <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+	                                 </svg>
+	                             </span><!--//submenu-arrow-->
+					        </a><!--//nav-link-->
+					        <div id="submenu-unit" class="collapse submenu submenu-unit" data-bs-parent="#menu-accordion">
+						        <ul class="submenu-list list-unstyled">
+							        <li class="submenu-item"><a class="submenu-link" href="<?= \yii\helpers\Url::to(['site/unit']) ?>">Create Units</a></li>
+							        <li class="submenu-item"><a class="submenu-link" href="<?= \yii\helpers\Url::to(['site/unit_table']) ?>">Unit Table</a></li>
+						        </ul>
+					        </div>
+					    </li><!--//nav-item-->
+
 
 
 
@@ -339,7 +366,7 @@
 					        <div id="submenu-100" class="collapse submenu submenu-100" data-bs-parent="#menu-accordion">
 						        <ul class="submenu-list list-unstyled">
 							        <li class="submenu-item"><a class="submenu-link" href="notifications.html">Notifications</a></li>
-							        <li class="submenu-item"><a class="submenu-link" href="account.html">Account</a></li>
+							        <li class="submenu-item"><a class="submenu-link" href="<?= \yii\helpers\Url::to(['site/user']) ?>">Account</a></li>
 							        <li class="submenu-item"><a class="submenu-link" href="settings.html">Settings</a></li>
 						        </ul>
 					        </div>

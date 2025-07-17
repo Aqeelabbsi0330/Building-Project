@@ -101,7 +101,17 @@
 										</tbody>
 									</table>
 						        </div><!--//table-responsive-->
-						       
+
+                            <div class="d-flex flex-row p-4 justify-content-end gap-3 me-1">
+						      <div class="text-end">
+                              <button type="submit" class="btn btn-primary px-4 text-light">Edit</button>
+                              </div>   
+							  <div class="text-end">
+                              <button type="submit" class="btn btn-primary px-4 text-light">Delete</button>
+                              </div> 
+</div>
+
+
 						    </div><!--//app-card-body-->		
 						
 			        </div><!--//tab-pane-->

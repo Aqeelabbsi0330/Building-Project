@@ -53,4 +53,12 @@ class SiteController extends Controller
     {
         return $this->render('utilityBills/utility_bill_table');
     }
+      public function actionUnit()
+    {
+        return $this->render('units/unit');
+    }
+   public function actionUnit_table()
+    {
+        return $this->render('units/unit_table');
+    }
 }
